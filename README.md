@@ -1,8 +1,9 @@
 This is a self-made project using a public data set to do with e-commerce data.
+
 SQL was used to determine answers to solve several business intelligence/marketing questions that would take place in a real-life scenario.
-The below is the schema for the given data:
+
+Schema for table: user_events
 -------------------------------------------------------------------------------
-Table name : user_events
 | Column | Type | Description |
 |----------|----------|----------|
 | event_id | INTEGER | Unique event identifier |
@@ -13,3 +14,13 @@ Table name : user_events
 | amount | FLOAT | Purchase value |
 | traffic_source | STRING | Types of marketing channels |
 -------------------------------------------------------------------------------
+   
+The first task was to create a funnel_stage CTE, so we can determine what the view count is like for visitors on each event_type.
+
+As you can see below, there is a descending trend across each stages of the event types.
+
+
+![Results 1](screenshots/queryresult1.png)
+
+
+This gives us a good baseline on how we can further manipulate the data to give us more insightful data.
