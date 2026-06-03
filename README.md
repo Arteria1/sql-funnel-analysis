@@ -13,7 +13,7 @@ By analysing user behaviour across a sales funnel, the project measures conversi
 The analysis identifies points of user drop-off, evaluates purchasing behaviour, and demonstrates how data can be used to support business decisions, optimise conversion performance, and drive revenue growth.
 
 
-Questions
+Business Questions
 ----
 1. What different event types are there?
 2. What are the conversion rates (%) from transitioning through each event type?
@@ -22,6 +22,7 @@ Questions
 5. How long does it take for users to complete the 'purchasing' lifecycle and how long is it per step?
 6. How much total revenue is generated?
 7. How much revenue is generated per customer?
+8. What is the highest selling product?
 
 Schema overview for table: user_events
 -------------------------------------------------------------------------------
@@ -36,3 +37,10 @@ Schema overview for table: user_events
 | traffic_source | STRING | Types of marketing channels |
 -------------------------------------------------------------------------------
 
+Key Findings
+---
+The overall conversion rate from website visit to purchase was 16.5% (826 purchases from 5,000 visitors).
+The largest drop-off occurred between the page view and add to cart stages, where only 31.1% of users progressed.
+Users who reached the payment stage showed a high intent to purchase, with 91.9% completing their transaction.
+Funnel analysis highlighted the early stages of the customer journey as the greatest opportunity for optimisation.
+Revenue analysis identified the total value generated from completed purchases and can be used to assess marketing channel effectiveness.
