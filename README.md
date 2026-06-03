@@ -24,3 +24,8 @@ As you can see below, there is a descending trend across each stages of the even
 
 
 This gives us a good baseline on how we can further manipulate the data to give us more insightful information.
+
+Here for the second step, we are calculating what the conversation rales are within the sales funnel:
+
+![Results 2](screenshots/queryresult2.png)
+
