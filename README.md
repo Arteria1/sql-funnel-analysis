@@ -1,4 +1,4 @@
-This is a self-made project using a public data set to do with e-commerce data.
+This is a self-made project using public e-commerce data.
 
 Google BigQuery/SQL was used to determine answers to solve several business intelligence/marketing questions that would take place in a real-life scenario.
 
@@ -15,5 +15,12 @@ Schema overview for table: user_events
 | traffic_source | STRING | Types of marketing channels |
 -------------------------------------------------------------------------------
    
-The queries have been saved under screenshots and are segmented in the .sql file as for what each section does and is responsible for.
+The queries have been saved under screenshots and are segmented in the .sql file into their own respective section and their responsibilities.
 
+Key findings
+
+1.
+2.
+3.
+4.
+5.
