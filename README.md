@@ -40,7 +40,15 @@ Schema overview for table: user_events
 Key Findings
 ---
 The overall conversion rate from website visit to purchase was 16.5% (826 purchases from 5,000 visitors).
+
 The largest drop-off occurred between the page view and add to cart stages, where only 31.1% of users progressed.
+
 Users who reached the payment stage showed a high intent to purchase, with 91.9% completing their transaction.
+
 Funnel analysis highlighted the early stages of the customer journey as the greatest opportunity for optimisation.
-Revenue analysis identified the total value generated from completed purchases and can be used to assess marketing channel effectiveness.
+
+Total revenue generated is £87,975.00. Revenue analysis can be used to assess marketing channel effectiveness.
+
+Product_id 205 is the highest generating product with a total revenue of £15,905.07.
+
+Product_id 101 has the highest sale price per unit.
