@@ -1,6 +1,6 @@
 This is a self-made project using a public data set to do with e-commerce data.
 
-SQL was used to determine answers to solve several business intelligence/marketing questions that would take place in a real-life scenario.
+Google BigQuery/SQL was used to determine answers to solve several business intelligence/marketing questions that would take place in a real-life scenario.
 
 Schema for table: user_events
 -------------------------------------------------------------------------------
@@ -23,4 +23,4 @@ As you can see below, there is a descending trend across each stages of the even
 ![Results 1](screenshots/queryresult1.png)
 
 
-This gives us a good baseline on how we can further manipulate the data to give us more insightful data.
+This gives us a good baseline on how we can further manipulate the data to give us more insightful information.
