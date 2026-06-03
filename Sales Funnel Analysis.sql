@@ -37,7 +37,8 @@ SELECT
     stage_4_payment,
     ROUND((stage_4_payment /stage_3_checkout ) * 100) as checkout_to_payment_rate,
     stage_5_purchase,
-    ROUND((stage_5_purchase / stage_4_payment) * 100) as payment_to_purchase_rate
+    ROUND((stage_5_purchase / stage_4_payment) * 100) as payment_to_purchase_rate,
+    ROUND((stage_5_purchase / stage_1_views) * 100) as overall_conversion_rate
 
 FROM funnel_stages
 
