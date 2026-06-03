@@ -1,3 +1,4 @@
+-- Creating funnel_stage CTE
 WITH funnel_stages AS (
 
   SELECT
