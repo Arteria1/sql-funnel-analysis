@@ -96,7 +96,7 @@ WITH funnel_analysis AS (
   SELECT
   COUNT(DISTINCT CASE WHEN event_type = 'page_view' THEN user_id END) AS total_visitors,
   COUNT(DISTINCT CASE WHEN event_type = 'purchase' THEN user_id END) as total_buyers,
-  SUM(CASE WHEN event_type = 'purchase' then amount END) AS total_revenue,
+  ROUND(SUM(CASE WHEN event_type = 'purchase' then amount END)) AS total_revenue,
   COUNT(CASE WHEN event_type = 'purchase' THEN 1 END) AS total_orders
   FROM `sql-project-498212.sql_practice.user_events`
 )
