@@ -1,4 +1,4 @@
--- Creating funnel_stage CTE
+-- 1. Creating funnel_stage CTE
 WITH funnel_stages AS (
 
   SELECT
@@ -13,7 +13,8 @@ WITH funnel_stages AS (
 
 SELECT * FROM funnel_stages
 
--- conversion rates through the funnel
+-- 2. Conversion rates through the funnel
+  -- Checking conversion rates from each stage.
 
 WITH funnel_stages AS (
 
@@ -42,7 +43,8 @@ SELECT
 
 FROM funnel_stages
 
--- funnel by source
+-- 3. funnel by traffic_source
+  -- analysing marketing channels
 
 WITH source_funnel AS (
 
@@ -67,8 +69,8 @@ ROUND((purchase / views) * 100) as view_to_purchase_rate
 FROM source_funnel
 ORDER BY traffic_source
 
--- time to conversion analysis
--- how long it takes to go from viewing to purchasing.
+-- 4. Time to conversion analysis
+  -- how long it takes to go from viewing to purchasing.
 
 WITH user_journey AS (
   SELECT
@@ -88,8 +90,8 @@ SELECT
   ROUND(AVG(TIMESTAMP_DIFF(purchase_time,view_time,MINUTE)), 2) as avg_view_to_purchase_minutes
 FROM user_journey
 
--- revenue funnel analysis
-
+-- 5. Revenue funnel analysis
+  -- Checking different revenue statistics.
 WITH funnel_analysis AS (
   SELECT
   COUNT(DISTINCT CASE WHEN event_type = 'page_view' THEN user_id END) AS total_visitors,
