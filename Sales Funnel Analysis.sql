@@ -110,3 +110,24 @@ ROUND(total_revenue / total_orders * 100) as avg_order_value,
 ROUND(total_revenue / total_buyers  * 100) as revenue_per_buyer,
 ROUND(total_revenue / total_visitors  * 100) as revenue_per_visitor
 FROM funnel_analysis
+
+-- 6. Revenue per product_id analysis
+  -- Checking revenue generated per product.
+
+WITH product_revenue AS(
+  SELECT
+  product_id,
+  COUNT(CASE WHEN event_type = 'purchase' THEN 1 END) as total_orders,
+  ROUND(SUM(CASE WHEN event_type = 'purchase' THEN amount END), 2) as total_revenue,
+  ROUND(AVG(CASE WHEN event_type = 'purchase' THEN amount END), 2) as avg_order_value
+  FROM `sql-project-498212.sql_practice.user_events`
+  GROUP BY product_id
+)
+
+SELECT
+product_id,
+total_orders,
+total_revenue,
+avg_order_value
+FROM product_revenue
+order by total_revenue desc
