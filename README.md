@@ -15,5 +15,5 @@ Schema overview for table: user_events
 | traffic_source | STRING | Types of marketing channels |
 -------------------------------------------------------------------------------
    
-
+The queries have been saved under screenshots and are segmented in the .sql file as for what each section does and is responsible for.
 
